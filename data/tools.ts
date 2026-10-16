@@ -3,27 +3,36 @@ export type Tool = {
   url: string;
   emoji: string;
   tagline: string;
-  category: "扫链" | "防骗" | "任务" | "钱包" | "推特";
-  must?: boolean;        // 必装标记
-  highlight?: string;    // 特色标签
+  category: "扫链" | "防骗" | "任务" | "钱包" | "数据";
+  must?: boolean;
+  highlight?: string;
 };
 
-// 撸毛人 Top 10 工具，按重要度排序
+// 撸毛人 Top 10 工具，按日常使用频度排序
 export const tools: Tool[] = [
   {
     name: "DexScreener",
     url: "https://dexscreener.com",
     emoji: "📡",
-    tagline: "新 meme 币涨幅榜 · 全链 DEX 聚合 · 撸毛人第一屏",
+    tagline: "新 meme 涨幅榜第一屏 · 全链 DEX 聚合 · 撸毛人每天必开",
     category: "扫链",
     must: true,
     highlight: "每日必看",
   },
   {
+    name: "GMGN",
+    url: "https://gmgn.ai",
+    emoji: "🐸",
+    tagline: "Solana/BSC meme 跟单神器 · 聪明钱监控 · 抢新币",
+    category: "扫链",
+    must: true,
+    highlight: "聪明钱追踪",
+  },
+  {
     name: "Bubblemaps",
     url: "https://bubblemaps.com",
     emoji: "🫧",
-    tagline: "钱包分布图 · 识破老鼠仓和貔貅盘 · meme 时代刚需",
+    tagline: "钱包分布图 · 一眼看穿老鼠仓和貔貅盘 · meme 时代刚需",
     category: "防骗",
     must: true,
     highlight: "防割神器",
@@ -38,15 +47,6 @@ export const tools: Tool[] = [
     highlight: "撸毛标配",
   },
   {
-    name: "GMGN",
-    url: "https://gmgn.ai",
-    emoji: "🐸",
-    tagline: "Solana/BSC meme 跟单神器 · 内置聪明钱监控",
-    category: "扫链",
-    must: true,
-    highlight: "聪明钱追踪",
-  },
-  {
     name: "Galxe",
     url: "https://galxe.com",
     emoji: "🎯",
@@ -55,39 +55,39 @@ export const tools: Tool[] = [
     must: true,
   },
   {
-    name: "Layer3",
-    url: "https://layer3.xyz",
+    name: "Zealy",
+    url: "https://zealy.io",
     emoji: "✨",
-    tagline: "跨链任务 · CUBEs 凭证 · 撸 L2 必备",
+    tagline: "社区任务平台 · XP 排行榜 · 撸毛人日常签到",
     category: "任务",
   },
   {
     name: "TokenSniffer",
     url: "https://tokensniffer.com",
     emoji: "🛡️",
-    tagline: "代币合约自动扫描 · 一键识别貔貅盘和 honeypot",
+    tagline: "代币合约自动扫描 · 买入前查 · 识破 honeypot",
     category: "防骗",
   },
   {
-    name: "GoPlus Security",
-    url: "https://goplus.com",
-    emoji: "🔒",
-    tagline: "Token 安全 API · 撸毛脚本风控常用",
-    category: "防骗",
+    name: "TokenUnlocks",
+    url: "https://token.unlocks.app",
+    emoji: "🔓",
+    tagline: "代币解锁日历 · 看懂砸盘时间点 · 找最佳入场",
+    category: "数据",
+    highlight: "避坑必备",
   },
   {
-    name: "Kaito",
-    url: "https://kaito.ai",
-    emoji: "🧠",
-    tagline: "CT KOL 智能搜索 · 看谁在喊什么币",
-    category: "推特",
-    highlight: "找 KOL",
+    name: "DefiLlama",
+    url: "https://defillama.com",
+    emoji: "🦙",
+    tagline: "DeFi TVL + 收益排行 · 撸协议收益必看 · 行业最权威",
+    category: "数据",
   },
   {
-    name: "De.Fi",
-    url: "https://defi.fi",
-    emoji: "💼",
-    tagline: "DeFi 一站式 + 内置风险扫描 · 撸毛资产管理",
-    category: "钱包",
+    name: "CoinGecko",
+    url: "https://coingecko.com",
+    emoji: "🦎",
+    tagline: "全球币价 + 链上数据 · 撸毛人查价标配 · API 免费",
+    category: "数据",
   },
 ];

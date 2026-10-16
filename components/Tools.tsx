@@ -6,7 +6,7 @@ const categoryColor: Record<Tool["category"], string> = {
   防骗: "tag-red",
   任务: "tag-yellow",
   钱包: "tag-green",
-  推特: "tag-zinc",
+  数据: "tag-zinc",
 };
 
 const categoryIcon: Record<Tool["category"], string> = {
@@ -14,7 +14,7 @@ const categoryIcon: Record<Tool["category"], string> = {
   防骗: "🛡",
   任务: "🎯",
   钱包: "💼",
-  推特: "𝕏",
+  数据: "📊",
 };
 
 export function Tools({ tools }: { tools: Tool[] }) {
