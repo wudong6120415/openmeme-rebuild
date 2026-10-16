@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#00ff88"/>
+      <stop offset="50%" stop-color="#34d399"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#27272a" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="#09090b"/>
+  <rect width="1200" height="630" fill="url(#grid)" opacity="0.4"/>
+  <circle cx="600" cy="200" r="200" fill="#00ff88" opacity="0.08"/>
+
+  <text x="80" y="240" font-family="ui-sans-serif, system-ui" font-size="48" font-weight="700" fill="#a1a1aa">OpenMeme.art</text>
+
+  <text x="80" y="360" font-family="ui-sans-serif, system-ui" font-size="96" font-weight="900" fill="#fafafa">撸毛信号</text>
+  <text x="80" y="460" font-family="ui-sans-serif, system-ui" font-size="96" font-weight="900" fill="url(#g)">比所有人早一步</text>
+
+  <text x="80" y="540" font-family="ui-sans-serif, system-ui" font-size="28" fill="#a1a1aa">1-2 周内 TGE · 空投 · 防骗  ·  由 𝕏 @ruoxi01 真人筛选</text>
+
+  <rect x="80" y="560" width="220" height="44" rx="10" fill="#00ff88"/>
+  <text x="190" y="590" text-anchor="middle" font-family="ui-sans-serif, system-ui" font-size="22" font-weight="700" fill="#000">关注 @ruoxi01 →</text>
+</svg>

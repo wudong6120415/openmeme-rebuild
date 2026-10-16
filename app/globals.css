@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  body {
+    background: #09090b;
+    color: #fafafa;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  ::selection {
+    background: #00ff88;
+    color: #000;
+  }
+}
+
+@layer components {
+  .container-narrow {
+    @apply max-w-5xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  .card {
+    @apply rounded-xl border border-bg-border bg-bg-card hover:border-zinc-700 transition-colors;
+  }
+  .card-pad {
+    @apply p-5 sm:p-6;
+  }
+  .tag {
+    @apply inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-xs font-medium border;
+  }
+  .tag-green {
+    @apply tag bg-emerald-500/10 text-emerald-400 border-emerald-500/30;
+  }
+  .tag-red {
+    @apply tag bg-rose-500/10 text-rose-400 border-rose-500/30;
+  }
+  .tag-yellow {
+    @apply tag bg-amber-500/10 text-amber-400 border-amber-500/30;
+  }
+  .tag-blue {
+    @apply tag bg-sky-500/10 text-sky-400 border-sky-500/30;
+  }
+  .tag-zinc {
+    @apply tag bg-zinc-500/10 text-zinc-400 border-zinc-500/30;
+  }
+  .btn-twitter {
+    @apply inline-flex items-center gap-2 rounded-lg bg-[#00ff88] hover:bg-[#00cc6e] text-black font-bold px-5 py-2.5 transition-all hover:scale-105 active:scale-95;
+  }
+  .btn-twitter-outline {
+    @apply inline-flex items-center gap-2 rounded-lg border border-[#00ff88] text-[#00ff88] hover:bg-[#00ff88]/10 font-medium px-4 py-2 transition-colors;
+  }
+  .gradient-text {
+    @apply bg-gradient-to-r from-[#00ff88] via-emerald-300 to-sky-400 bg-clip-text text-transparent;
+  }
+  .grid-bg {
+    background-image:
+      linear-gradient(rgba(63, 63, 70, 0.15) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(63, 63, 70, 0.15) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+}
+
+/* Hide scrollbar on horizontal marquee but keep functionality */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
