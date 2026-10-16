@@ -12,8 +12,8 @@ Set-Location $PSScriptRoot
 . $env:USERPROFILE\.openmeme\load.ps1
 
 Write-Host "=== Step 1/3: git commit + push ===" -ForegroundColor Cyan
-git add .
-$hasChanges = git diff --cached --quiet; $LASTEXITCODE -eq 1
+git add -A
+$hasChanges = git diff --cached --quiet; $hasChanges = $LASTEXITCODE -ne 0
 if (-not $hasChanges) {
     Write-Host "  (no local changes to commit)" -ForegroundColor Yellow
 } else {
@@ -27,11 +27,21 @@ vercel deploy --prod --yes --token $env:VERCEL_TOKEN --scope $env:VERCEL_SCOPE 2
 Write-Host "`n=== Step 3/3: verify ===" -ForegroundColor Cyan
 Start-Sleep -Seconds 5
 $h = @{ Authorization = "Bearer $env:VERCEL_TOKEN" }
-$proj = Invoke-RestMethod -Uri "https://api.vercel.com/v9/projects/$env:VERCEL_PROJECT_ID/deployments?teamId=$env:VERCEL_TEAM_ID&limit=1" -Headers $h
+$teamId = $env:VERCEL_ORG_ID
+$projId = $env:VERCEL_PROJECT_ID
+$proj = Invoke-RestMethod -Uri "https://api.vercel.com/v9/projects/$projId/deployments?teamId=$teamId&limit=1" -Headers $h
 $d = $proj.deployments[0]
 Write-Host "  deployment: $($d.uid)" -ForegroundColor Green
 Write-Host "  state: $($d.state)"
 Write-Host "  url: https://$($d.url)"
 Write-Host "  ready: $(if ($d.ready) {'YES'} else {'building...'})"
+
+Write-Host "`n=== Live site check ===" -ForegroundColor Cyan
+try {
+  $prod = Invoke-WebRequest -Uri "https://openmeme.art" -Method GET -UseBasicParsing -TimeoutSec 15
+  Write-Host "  openmeme.art: HTTP $($prod.StatusCode) · title=$(([regex]::Match($prod.Content, '<title>(.*?)</title>')).Groups[1].Value)"
+} catch {
+  Write-Host "  ERROR: $($_.Exception.Message)"
+}
 
 Write-Host "`n✓ Done. openmeme.art updated." -ForegroundColor Green
