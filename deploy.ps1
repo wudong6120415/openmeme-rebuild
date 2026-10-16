@@ -26,20 +26,14 @@ vercel deploy --prod --yes --token $env:VERCEL_TOKEN --scope $env:VERCEL_SCOPE 2
 
 Write-Host "`n=== Step 3/3: verify ===" -ForegroundColor Cyan
 Start-Sleep -Seconds 5
-$h = @{ Authorization = "Bearer $env:VERCEL_TOKEN" }
-$teamId = $env:VERCEL_ORG_ID
-$projId = $env:VERCEL_PROJECT_ID
-$proj = Invoke-RestMethod -Uri "https://api.vercel.com/v9/projects/$projId/deployments?teamId=$teamId&limit=1" -Headers $h
-$d = $proj.deployments[0]
-Write-Host "  deployment: $($d.uid)" -ForegroundColor Green
-Write-Host "  state: $($d.state)"
-Write-Host "  url: https://$($d.url)"
-Write-Host "  ready: $(if ($d.ready) {'YES'} else {'building...'})"
 
 Write-Host "`n=== Live site check ===" -ForegroundColor Cyan
 try {
   $prod = Invoke-WebRequest -Uri "https://openmeme.art" -Method GET -UseBasicParsing -TimeoutSec 15
-  Write-Host "  openmeme.art: HTTP $($prod.StatusCode) · title=$(([regex]::Match($prod.Content, '<title>(.*?)</title>')).Groups[1].Value)"
+  Write-Host "  openmeme.art: HTTP $($prod.StatusCode)"
+  Write-Host "  title: $(([regex]::Match($prod.Content, '<title>(.*?)</title>')).Groups[1].Value)"
+  $toolsShown = $prod.Content -match 'Top 10|Bubblemaps|DexScreener'
+  Write-Host "  Tools section present: $toolsShown"
 } catch {
   Write-Host "  ERROR: $($_.Exception.Message)"
 }
