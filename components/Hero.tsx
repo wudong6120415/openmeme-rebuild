@@ -4,10 +4,12 @@ export function Hero({
   signalCount,
   airdropCount,
   scamCount,
+  toolCount,
 }: {
   signalCount: number;
   airdropCount: number;
   scamCount: number;
+  toolCount: number;
 }) {
   return (
     <section className="relative overflow-hidden border-b border-bg-border">
@@ -43,10 +45,11 @@ export function Hero({
             </a>
           </div>
 
-          <div className="grid grid-cols-3 gap-px bg-bg-border rounded-2xl overflow-hidden border border-bg-border w-full max-w-md">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-px bg-bg-border rounded-2xl overflow-hidden border border-bg-border w-full max-w-2xl">
             <Stat n={signalCount} label="早期项目" />
             <Stat n={airdropCount} label="活跃空投" />
             <Stat n={scamCount} label="防骗预警" />
+            <Stat n={toolCount} label="必装工具" />
           </div>
         </div>
       </div>
