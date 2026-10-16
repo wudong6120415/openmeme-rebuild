@@ -8,12 +8,12 @@ export function Header() {
     <header className="sticky top-0 z-40 w-full border-b border-bg-border bg-bg-base/80 backdrop-blur-md">
       <div className="container-narrow flex items-center justify-between h-14">
         <Link href="/" className="flex items-center gap-2 group">
-          <div className="relative w-9 h-9 rounded-lg overflow-hidden ring-1 ring-zinc-800 group-hover:ring-[#00ff88] transition-all">
+          <div className="relative w-12 h-12 rounded-lg overflow-hidden ring-1 ring-zinc-800 group-hover:ring-[#00ff88] transition-all shadow-[0_0_12px_-3px_rgba(0,255,136,0.3)]">
             <Image
-              src="/logo.png"
+              src="/logo-header.png"
               alt="OpenMeme.art logo"
-              width={36}
-              height={36}
+              width={48}
+              height={48}
               className="w-full h-full object-cover"
               priority
             />
