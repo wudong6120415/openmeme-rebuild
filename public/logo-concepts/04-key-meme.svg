@@ -1,0 +1,30 @@
+<!-- Concept 4: "Meme Key" - 钥匙 + meme -->
+<!-- Idea: Key shape with meme face in the bow (unlock memes) -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <rect width="200" height="200" rx="36" fill="#0a0a0a"/>
+
+  <!-- Key bow (top circle) -->
+  <circle cx="72" cy="84" r="32" fill="none" stroke="#00ff88" stroke-width="10"/>
+
+  <!-- Inner key bow accent -->
+  <circle cx="72" cy="84" r="6" fill="#00ff88"/>
+
+  <!-- Key shaft -->
+  <rect x="98" y="78" width="60" height="12" fill="#00ff88"/>
+
+  <!-- Key teeth -->
+  <g fill="#00ff88">
+    <rect x="138" y="90" width="10" height="14"/>
+    <rect x="152" y="90" width="10" height="20"/>
+  </g>
+
+  <!-- Meme face inside the bow (top-left area) -->
+  <g fill="#00ff88">
+    <ellipse cx="64" cy="78" rx="3" ry="5"/>
+    <ellipse cx="80" cy="78" rx="3" ry="5"/>
+  </g>
+
+  <!-- Tiny smile inside bow -->
+  <path d="M 64 92 Q 72 98 80 92"
+        stroke="#00ff88" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+</svg>

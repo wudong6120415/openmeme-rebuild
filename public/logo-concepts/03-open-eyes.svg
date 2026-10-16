@@ -1,0 +1,26 @@
+<!-- Concept 3: "Open Eyes" - 睁开的眼 -->
+<!-- Idea: Wide-open eyes = literal "open", with meme character hint -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <rect width="200" height="200" rx="36" fill="#0a0a0a"/>
+
+  <!-- Two large wide-open eyes forming "open" + meme face -->
+  <g>
+    <!-- Left eye outer (white/light) -->
+    <ellipse cx="68" cy="92" rx="26" ry="30" fill="#00ff88"/>
+    <!-- Left eye pupil -->
+    <ellipse cx="68" cy="92" rx="9" ry="13" fill="#0a0a0a"/>
+    <!-- Left eye highlight -->
+    <circle cx="72" cy="86" r="3" fill="#00ff88"/>
+
+    <!-- Right eye outer -->
+    <ellipse cx="132" cy="92" rx="26" ry="30" fill="#00ff88"/>
+    <!-- Right eye pupil -->
+    <ellipse cx="132" cy="92" rx="9" ry="13" fill="#0a0a0a"/>
+    <!-- Right eye highlight -->
+    <circle cx="136" cy="86" r="3" fill="#00ff88"/>
+  </g>
+
+  <!-- Subtle smile (the meme) -->
+  <path d="M 76 140 Q 100 156 124 140"
+        stroke="#00ff88" stroke-width="5" stroke-linecap="round" fill="none"/>
+</svg>

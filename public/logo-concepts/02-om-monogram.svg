@@ -1,0 +1,37 @@
+<!-- Concept 2: "OM Monogram with Meme Face" - 字体融合 -->
+<!-- Idea: Bold O letter containing classic meme eyes, M implied by smile shape -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <rect width="200" height="200" rx="36" fill="#0a0a0a"/>
+
+  <!-- Bold ring "O" -->
+  <circle cx="100" cy="100" r="56" stroke="#00ff88" stroke-width="16" fill="none"/>
+
+  <!-- Classic meme eyes inside the O -->
+  <g fill="#00ff88">
+    <!-- left eye -->
+    <ellipse cx="84" cy="90" rx="6" ry="9"/>
+    <!-- right eye -->
+    <ellipse cx="116" cy="90" rx="6" ry="9"/>
+  </g>
+
+  <!-- M-shaped smile (the "M" of Meme) -->
+  <path d="M 78 122
+           L 86 114
+           L 94 122
+           L 100 116
+           L 106 122
+           L 114 114
+           L 122 122
+           L 122 128
+           L 114 120
+           L 106 128
+           L 100 122
+           L 94 128
+           L 86 120
+           L 78 128
+           Z"
+        fill="#00ff88"/>
+
+  <!-- Subtle accent: opening at the top of O -->
+  <circle cx="100" cy="44" r="3" fill="#00ff88"/>
+</svg>
