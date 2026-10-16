@@ -37,22 +37,30 @@
 
 ### 场景 1: 加 / 改 / 删信号内容
 **你说**： `"加一条新 Meme, XYZ 项目, Solana 链, 7 天 TGE"`  
-**我做**：
-1. 改 `data/signals.ts`
-2. `git commit && git push`  → 自动部署到 Vercel
-3. 30 秒 - 2 分钟后 `openmeme.art` 显示新内容
+**我做**：跑 `deploy.ps1`，代码上 GitHub + 网站更新，**全自动**。
+
+### 一键部署脚本（项目根目录）
+```powershell
+.\deploy.ps1 -Message "加新信号: XYZ"
+```
+执行内容：
+1. `git add . && git commit && git push` → 备份到 GitHub
+2. `vercel deploy --prod` → 部署到生产
+3. 验证部署状态
+
+总耗时约 **1-2 分钟**。
 
 ### 场景 2: 改文案 / Slogan / 标题
 **你说**： `"主标题改成 '撸毛人自己的站'"`  
-**我做**：改对应文件 → push → 部署。
+**我做**：改对应文件 → `deploy.ps1` → 上线。
 
 ### 场景 3: 加新功能（搜索、详情页、表单、爬虫……）
 **你说**： `"我要加个搜索框，按链筛选 Meme"`  
-**我做**：写新组件 / 路由 / API → push → 部署。
+**我做**：写新组件 / 路由 / API → `deploy.ps1` → 上线。
 
 ### 场景 4: 接入新数据源
 **你说**： `"加 CoinGecko 的市值数据"`  
-**我做**：写 API route → 接入 → push → 部署。
+**我做**：写 API route → 接入 → `deploy.ps1` → 上线。
 
 ### 场景 5: 紧急回滚
 **你说**： `"刚才那次部署有问题，回滚到上版本"`  
