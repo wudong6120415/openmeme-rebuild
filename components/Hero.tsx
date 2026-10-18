@@ -38,7 +38,7 @@ export function Hero() {
           </div>
 
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-px bg-bg-border rounded-2xl overflow-hidden border border-bg-border w-full max-w-2xl">
-            {t("hero.stats").map((s) => (
+            {t("hero.stats").map((s: { value: string; label: string }) => (
               <div key={s.label} className="bg-bg-card p-4 text-center">
                 <div className="text-2xl sm:text-3xl font-extrabold text-[#00ff88]">
                   {s.value}

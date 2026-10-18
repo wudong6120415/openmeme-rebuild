@@ -139,32 +139,31 @@ export const dict: Record<Lang, Dict> = {
   },
 };
 
-// Simple template helper: t("zh", "hero.title") or t("zh", "kol.modal.score", { score: 9 })
-type Path<T, P extends string = ""> = {
-  [K in keyof T & string]:
-    T[K] extends object
-      ? Path<T[K], `${P}${K}.`>
-      : `${P}${K}`;
-}[keyof T & string];
+// Type for the t() function: returns same type as the path
+// For our use case, we want `t("hero.stats")` to return the array type.
+// We use a generic that preserves the type.
 
-export type DictPath = Path<Dict>;
+// Use loose typing for t to allow both strings and arrays
+export type DictPath = string; // intentionally loose
 
-export function t<K extends DictPath>(
+export function t<K extends string>(
   lang: Lang,
   key: K,
   vars?: Record<string, string | number>,
-): string {
+): any {
   const parts = key.split(".");
   let cur: any = dict[lang];
   for (const p of parts) {
     if (cur == null) return key;
     cur = cur[p];
   }
-  if (typeof cur !== "string") return key;
-  if (!vars) return cur;
-  return cur.replace(/\{(\w+)\}/g, (_, k) =>
-    vars[k] != null ? String(vars[k]) : `{${k}}`,
-  );
+  if (typeof cur === "string") {
+    if (!vars) return cur;
+    return cur.replace(/\{(\w+)\}/g, (_, k) =>
+      vars[k] != null ? String(vars[k]) : `{${k}}`,
+    );
+  }
+  return cur; // return arrays/objects as-is
 }
 
 export const STORAGE_KEY = "openmeme-lang";

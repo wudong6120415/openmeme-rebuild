@@ -6,7 +6,7 @@ import { dict, t as tImpl, type Lang, type DictPath, STORAGE_KEY } from "@/lib/i
 type Ctx = {
   lang: Lang;
   setLang: (l: Lang) => void;
-  t: <K extends DictPath>(key: K, vars?: Record<string, string | number>) => string;
+  t: (key: string, vars?: Record<string, string | number>) => any;
 };
 
 const I18nContext = createContext<Ctx | null>(null);
@@ -28,7 +28,8 @@ export function I18nProvider({ children, initial }: { children: ReactNode; initi
     } catch {}
   };
 
-  const t: Ctx["t"] = (key, vars) => tImpl(lang, key, vars);
+  const t = (key: string, vars?: Record<string, string | number>) =>
+    tImpl(lang, key, vars);
 
   return <I18nContext.Provider value={{ lang, setLang, t }}>{children}</I18nContext.Provider>;
 }
