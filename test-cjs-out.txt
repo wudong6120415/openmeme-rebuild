@@ -1,0 +1,3 @@
+FAIL: Cannot find module '@deepseek-ai/dsh-agent'
+Require stack:
+- F:\deepseek\openmeme-rebuild\test-require.cjs

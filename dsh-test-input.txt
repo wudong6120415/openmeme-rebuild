@@ -1,0 +1,6 @@
+Please test these tools if they are available:
+1. browser_navigate(url) or browser tools - try navigating to https://openmeme.art
+2. web_search_pro or web_search - try searching for "meme coin news October 2026"
+3. prompt-profile list - show me what prompt profiles are configured
+
+Report what tools you have available and what worked. Be concise.

@@ -1,0 +1,14 @@
+WEB profile modules: C:\Users\Administrator\.dsh\profiles\web\node_modules
+CORE DSH modules: C:\Users\Administrator\.dsh\profiles\node_modules
+(both must exist for the plugins to find their deps)
+
+=== 1. dsh-prompt-profile ===
+  [FAIL] THREW: Cannot find package 'C:\Users\Administrator\.dsh\profiles\node_modules\@deepseek-ai\dsh-agent\index.js' imported from C:\Users\Administrator\.dsh\profiles\web\node_modules\dsh-prompt-profile\lib\index
+
+=== 2. dsh-web-search-pro ===
+  [FAIL] THREW: Cannot find package 'C:\Users\Administrator\.dsh\profiles\node_modules\@deepseek-ai\dsh-credentials\index.js' imported from C:\Users\Administrator\.dsh\profiles\web\node_modules\dsh-web-search-pro\lib
+
+=== 3. dsh-browser ===
+  [FAIL] THREW: Cannot find package 'C:\Users\Administrator\.dsh\profiles\node_modules\@deepseek-ai\dsh-tools\index.js' imported from C:\Users\Administrator\.dsh\profiles\web\node_modules\@anweat\dsh-browser\lib\tool
+
+=== DONE ===

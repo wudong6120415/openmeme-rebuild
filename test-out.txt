@@ -1,0 +1,14 @@
+=== static inspection of plugin source ===
+
+--- dsh-prompt-profile ---
+  main: /dsh-prompt-profile/lib/index.js
+  exposed fns (0): 
+  DSH shape: apply=true, Config=true, name=dsh-prompt-profile, inject='commands'
+--- dsh-web-search-pro ---
+  main: /dsh-web-search-pro/lib/index.js
+  exposed fns (2): evidence, text
+  DSH shape: apply=true, Config=false, name=web-search-pro, inject='tools', 'systemPrompt'
+--- @anweat/dsh-browser ---
+  main: /@anweat/dsh-browser/lib/index.js
+  exposed fns (0): 
+  DSH shape: apply=true, Config=false, name=dsh-browser, inject='tools'

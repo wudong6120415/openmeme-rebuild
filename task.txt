@@ -1,0 +1,7 @@
+You have 3 new plugins installed: dsh-browser, dsh-web-search-pro, dsh-prompt-profile.
+
+Please do this EXACT test:
+1. Call `web_search_pro` (or whatever search tool you have) to search "meme coin news October 2026"
+2. Report what tools you see with `browser_` prefix
+3. Try the `/prompt-profile` slash command
+4. Output: which plugins worked, which didn't, any error messages
