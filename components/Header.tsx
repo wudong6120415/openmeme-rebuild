@@ -31,6 +31,7 @@ export function Header() {
           <a href="#airdrop" className="hover:text-zinc-100 transition-colors">空投</a>
           <a href="#scam" className="hover:text-zinc-100 transition-colors">防骗</a>
           <a href="#tools" className="hover:text-[#00ff88] transition-colors">🧰 工具</a>
+          <a href="#kol" className="hover:text-[#00ff88] transition-colors">𝕏 KOL</a>
           <a href="#why" className="hover:text-zinc-100 transition-colors">关于</a>
         </nav>
 
