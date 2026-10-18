@@ -1,13 +1,15 @@
+"use client";
+
+import { useI18n } from "@/components/I18nProvider";
 import { SITE } from "@/lib/site";
 
 export function Footer() {
+  const { t } = useI18n();
   return (
     <footer className="border-t border-bg-border bg-bg-base">
       <div className="container-narrow py-10">
         <div className="rounded-xl border border-amber-500/20 bg-amber-500/[0.03] p-5 mb-8 text-sm text-zinc-300 leading-relaxed">
-          <div className="font-bold text-amber-400 mb-2">⚠ 免责声明</div>
-          本网站所有内容仅供<span className="font-semibold">信息聚合与研究参考</span>,
-          <span className="font-semibold text-rose-400">不构成任何投资建议</span>。
+          <div className="font-bold text-amber-400 mb-2">⚠ {t("footer.disclaimer")}</div>
           <ul className="mt-3 space-y-1 text-xs text-zinc-400 list-disc list-inside">
             <li>加密资产价格波动剧烈, 可能损失全部本金</li>
             <li>Meme 币 / 空投 / 撸毛项目风险极高, 多数最终归零</li>
@@ -30,7 +32,7 @@ export function Footer() {
             <a href={SITE.githubUrl} target="_blank" rel="noopener noreferrer" className="hover:text-[#00ff88]">
               GitHub
             </a>
-            <a href="#early" className="hover:text-[#00ff88]">回到顶部 ↑</a>
+            <a href="#kol" className="hover:text-[#00ff88]">回到顶部 ↑</a>
           </div>
         </div>
       </div>
