@@ -31,9 +31,15 @@ export function Header() {
           </div>
         </Link>
 
-        <nav className="hidden md:flex items-center gap-6 text-sm text-zinc-400">
+        <nav className="hidden md:flex items-center gap-5 text-sm text-zinc-400">
           <a href="#kol" className="hover:text-[#00ff88] transition-colors">
-            𝕏 KOL
+            🏆 KOL 榜
+          </a>
+          <a href="#projects" className="hover:text-[#00ff88] transition-colors">
+            🆕 新项目
+          </a>
+          <a href="#stats" className="hover:text-[#00ff88] transition-colors">
+            📊 数据
           </a>
         </nav>
 

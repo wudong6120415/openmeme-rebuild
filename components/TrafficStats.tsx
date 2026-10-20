@@ -57,7 +57,7 @@ export function TrafficStats() {
       )}
 
       {/* 完整统计区 */}
-      <section className="py-12 border-b border-bg-border bg-zinc-950/40">
+      <section id="stats" className="py-12 border-b border-bg-border bg-zinc-950/40">
         <div className="container-narrow">
           <div className="text-center mb-6">
             <div className="text-2xl mb-1">📊</div>
