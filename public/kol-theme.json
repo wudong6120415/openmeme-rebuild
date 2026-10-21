@@ -1,0 +1,176 @@
+[
+  {
+    "handle": "cz_binance",
+    "accent": "#9359ec",
+    "accent2": "#6512e4",
+    "blue_verified": true
+  },
+  {
+    "handle": "justinsuntron",
+    "accent": "#73a7fa",
+    "accent2": "#3782f8",
+    "blue_verified": true
+  },
+  {
+    "handle": "VitalikButerin",
+    "accent": "#675ff5",
+    "accent2": "#271bf2",
+    "blue_verified": true
+  },
+  {
+    "handle": "WuBlockchain",
+    "accent": "#5b7085",
+    "accent2": "#153452",
+    "blue_verified": true
+  },
+  {
+    "handle": "BlockBeats",
+    "accent": "#8ffd7f",
+    "accent2": "#60fd49",
+    "blue_verified": true
+  },
+  {
+    "handle": "WatcherGuru",
+    "accent": "#68be67",
+    "accent2": "#28a326",
+    "blue_verified": true
+  },
+  {
+    "handle": "btcdayu",
+    "accent": "#99f162",
+    "accent2": "#6eeb1f",
+    "blue_verified": true
+  },
+  {
+    "handle": "hexiecs",
+    "accent": "#7c6ac1",
+    "accent2": "#442ba7",
+    "blue_verified": true
+  },
+  {
+    "handle": "_FORAB",
+    "accent": "#6db6b1",
+    "accent2": "#2f9790",
+    "blue_verified": false
+  },
+  {
+    "handle": "searchin",
+    "accent": "#a48eaf",
+    "accent2": "#7e5e8d",
+    "blue_verified": false
+  },
+  {
+    "handle": "lookonchain",
+    "accent": "#69e15e",
+    "accent2": "#29d51a",
+    "blue_verified": false
+  },
+  {
+    "handle": "ArkhamIntel",
+    "accent": "#98d3d2",
+    "accent2": "#6dc1c0",
+    "blue_verified": false
+  },
+  {
+    "handle": "spotonchain",
+    "accent": "#608b9a",
+    "accent2": "#1c5a70",
+    "blue_verified": false
+  },
+  {
+    "handle": "MessariCrypto",
+    "accent": "#ad99e6",
+    "accent2": "#8a6edc",
+    "blue_verified": false
+  },
+  {
+    "handle": "0xScope",
+    "accent": "#a55be7",
+    "accent2": "#7f15dd",
+    "blue_verified": false
+  },
+  {
+    "handle": "GlassnodeAlerts",
+    "accent": "#bbd38c",
+    "accent2": "#9fc15b",
+    "blue_verified": false
+  },
+  {
+    "handle": "BensonTWN",
+    "accent": "#c8dca3",
+    "accent2": "#b1ce7c",
+    "blue_verified": false
+  },
+  {
+    "handle": "DaanCrypto",
+    "accent": "#5ef167",
+    "accent2": "#19eb26",
+    "blue_verified": false
+  },
+  {
+    "handle": "Kyla_0x",
+    "accent": "#ea5add",
+    "accent2": "#e214cf",
+    "blue_verified": false
+  },
+  {
+    "handle": "franklin_deng",
+    "accent": "#cabb83",
+    "accent2": "#b49e4f",
+    "blue_verified": false
+  },
+  {
+    "handle": "Web3Lucia",
+    "accent": "#eeee67",
+    "accent2": "#e8e826",
+    "blue_verified": false
+  },
+  {
+    "handle": "0xMaki",
+    "accent": "#9e60fe",
+    "accent2": "#751cfe",
+    "blue_verified": false
+  },
+  {
+    "handle": "0xSun",
+    "accent": "#e0eef2",
+    "accent2": "#d4e7ed",
+    "blue_verified": false
+  },
+  {
+    "handle": "beinz",
+    "accent": "#98a8cf",
+    "accent2": "#6c84bb",
+    "blue_verified": false
+  },
+  {
+    "handle": "chasewild",
+    "accent": "#b2f6e4",
+    "accent2": "#91f3d9",
+    "blue_verified": false
+  },
+  {
+    "handle": "0x_aladdin",
+    "accent": "#6e81a6",
+    "accent2": "#304b80",
+    "blue_verified": false
+  },
+  {
+    "handle": "0xCat",
+    "accent": "#9a6ca6",
+    "accent2": "#6f2e80",
+    "blue_verified": false
+  },
+  {
+    "handle": "0xMika",
+    "accent": "#ecd5a4",
+    "accent2": "#e5c37d",
+    "blue_verified": false
+  },
+  {
+    "handle": "ArthurMa",
+    "accent": "#e4ec4f",
+    "accent2": "#d9e404",
+    "blue_verified": false
+  }
+]

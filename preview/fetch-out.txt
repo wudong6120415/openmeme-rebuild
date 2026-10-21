@@ -1,0 +1,33 @@
+=== fetching 23 real profiles (slow + backoff) ===
+
+      429 -> wait 4.0s (1/5)
+      429 -> wait 15.4s (2/5)
+      429 -> wait 36.6s (3/5)
+      429 -> wait 79.4s (4/5)
+  [ 1/23] MISS  @cz_binance             HTTPError: HTTP Error 429: Too Many Reques
+      429 -> wait 4.7s (1/5)
+      429 -> wait 13.7s (2/5)
+      429 -> wait 35.0s (3/5)
+      429 -> wait 79.0s (4/5)
+  [ 2/23] MISS  @justinsuntron          HTTPError: HTTP Error 429: Too Many Reques
+      429 -> wait 5.7s (1/5)
+      429 -> wait 14.8s (2/5)
+      429 -> wait 34.7s (3/5)
+      429 -> wait 80.5s (4/5)
+  [ 3/23] MISS  @czsxyj                 HTTPError: HTTP Error 429: Too Many Reques
+      429 -> wait 5.1s (1/5)
+      429 -> wait 15.0s (2/5)
+      429 -> wait 36.3s (3/5)
+      429 -> wait 78.7s (4/5)
+  [ 4/23] MISS  @WuBlockchain           HTTPError: HTTP Error 429: Too Many Reques
+      429 -> wait 5.3s (1/5)
+      429 -> wait 14.1s (2/5)
+      429 -> wait 35.2s (3/5)
+      429 -> wait 78.7s (4/5)
+  [ 5/23] MISS  @BlockBeats             HTTPError: HTTP Error 429: Too Many Reques
+      429 -> wait 5.5s (1/5)
+      429 -> wait 14.0s (2/5)
+      429 -> wait 35.8s (3/5)
+      429 -> wait 80.0s (4/5)
+  [ 6/23] MISS  @WatcherGuru            HTTPError: HTTP Error 429: Too Many Reques
+      429 -> wait 4.3s (1/5)

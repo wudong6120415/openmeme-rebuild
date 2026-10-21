@@ -1,0 +1,205 @@
+[
+  {
+    "handle": "cz_binance",
+    "initials": "CZ",
+    "color1": "rgb(101,18,228)",
+    "color2": "rgb(235,59,247)",
+    "tier": "gold"
+  },
+  {
+    "handle": "justinsuntron",
+    "initials": "JU",
+    "color1": "rgb(55,130,248)",
+    "color2": "rgb(79,67,209)",
+    "tier": "bronze"
+  },
+  {
+    "handle": "VitalikButerin",
+    "initials": "VI",
+    "color1": "rgb(39,27,242)",
+    "color2": "rgb(131,89,90)",
+    "tier": "gold"
+  },
+  {
+    "handle": "WuBlockchain",
+    "initials": "WU",
+    "color1": "rgb(21,52,82)",
+    "color2": "rgb(80,181,146)",
+    "tier": "silver"
+  },
+  {
+    "handle": "BlockBeats",
+    "initials": "BL",
+    "color1": "rgb(96,253,73)",
+    "color2": "rgb(78,39,103)",
+    "tier": "diamond"
+  },
+  {
+    "handle": "WatcherGuru",
+    "initials": "WA",
+    "color1": "rgb(40,163,38)",
+    "color2": "rgb(126,203,152)",
+    "tier": "bronze"
+  },
+  {
+    "handle": "btcdayu",
+    "initials": "BT",
+    "color1": "rgb(110,235,31)",
+    "color2": "rgb(32,228,16)",
+    "tier": "gold"
+  },
+  {
+    "handle": "hexiecs",
+    "initials": "HE",
+    "color1": "rgb(68,43,167)",
+    "color2": "rgb(205,140,153)",
+    "tier": "bronze"
+  },
+  {
+    "handle": "_FORAB",
+    "initials": "FO",
+    "color1": "rgb(47,151,144)",
+    "color2": "rgb(2,235,164)",
+    "tier": "diamond"
+  },
+  {
+    "handle": "searchin",
+    "initials": "SE",
+    "color1": "rgb(126,94,141)",
+    "color2": "rgb(231,244,181)",
+    "tier": "silver"
+  },
+  {
+    "handle": "lookonchain",
+    "initials": "LO",
+    "color1": "rgb(41,213,26)",
+    "color2": "rgb(20,167,129)",
+    "tier": "silver"
+  },
+  {
+    "handle": "ArkhamIntel",
+    "initials": "AR",
+    "color1": "rgb(109,193,192)",
+    "color2": "rgb(166,174,65)",
+    "tier": "bronze"
+  },
+  {
+    "handle": "spotonchain",
+    "initials": "SP",
+    "color1": "rgb(28,90,112)",
+    "color2": "rgb(210,27,89)",
+    "tier": "gold"
+  },
+  {
+    "handle": "MessariCrypto",
+    "initials": "ME",
+    "color1": "rgb(138,110,220)",
+    "color2": "rgb(167,223,22)",
+    "tier": "silver"
+  },
+  {
+    "handle": "0xScope",
+    "initials": "SC",
+    "color1": "rgb(127,21,221)",
+    "color2": "rgb(115,143,13)",
+    "tier": "gold"
+  },
+  {
+    "handle": "GlassnodeAlerts",
+    "initials": "GL",
+    "color1": "rgb(159,193,91)",
+    "color2": "rgb(5,114,110)",
+    "tier": "bronze"
+  },
+  {
+    "handle": "BensonTWN",
+    "initials": "BE",
+    "color1": "rgb(177,206,124)",
+    "color2": "rgb(232,47,183)",
+    "tier": "silver"
+  },
+  {
+    "handle": "DaanCrypto",
+    "initials": "DA",
+    "color1": "rgb(25,235,38)",
+    "color2": "rgb(66,167,185)",
+    "tier": "diamond"
+  },
+  {
+    "handle": "Kyla_0x",
+    "initials": "KY",
+    "color1": "rgb(226,20,207)",
+    "color2": "rgb(154,205,153)",
+    "tier": "gold"
+  },
+  {
+    "handle": "franklin_deng",
+    "initials": "FR",
+    "color1": "rgb(180,158,79)",
+    "color2": "rgb(49,211,111)",
+    "tier": "bronze"
+  },
+  {
+    "handle": "Web3Lucia",
+    "initials": "WE",
+    "color1": "rgb(232,232,38)",
+    "color2": "rgb(68,128,234)",
+    "tier": "platinum"
+  },
+  {
+    "handle": "0xMaki",
+    "initials": "MA",
+    "color1": "rgb(117,28,254)",
+    "color2": "rgb(90,215,59)",
+    "tier": "silver"
+  },
+  {
+    "handle": "0xSun",
+    "initials": "SU",
+    "color1": "rgb(212,231,237)",
+    "color2": "rgb(163,246,209)",
+    "tier": "bronze"
+  },
+  {
+    "handle": "beinz",
+    "initials": "BE",
+    "color1": "rgb(108,132,187)",
+    "color2": "rgb(75,86,114)",
+    "tier": "gold"
+  },
+  {
+    "handle": "chasewild",
+    "initials": "CH",
+    "color1": "rgb(145,243,217)",
+    "color2": "rgb(111,64,66)",
+    "tier": "silver"
+  },
+  {
+    "handle": "0x_aladdin",
+    "initials": "AL",
+    "color1": "rgb(48,75,128)",
+    "color2": "rgb(134,52,242)",
+    "tier": "gold"
+  },
+  {
+    "handle": "0xCat",
+    "initials": "CA",
+    "color1": "rgb(111,46,128)",
+    "color2": "rgb(244,61,255)",
+    "tier": "bronze"
+  },
+  {
+    "handle": "0xMika",
+    "initials": "MI",
+    "color1": "rgb(229,195,125)",
+    "color2": "rgb(119,11,43)",
+    "tier": "platinum"
+  },
+  {
+    "handle": "ArthurMa",
+    "initials": "AR",
+    "color1": "rgb(217,228,4)",
+    "color2": "rgb(19,68,111)",
+    "tier": "platinum"
+  }
+]

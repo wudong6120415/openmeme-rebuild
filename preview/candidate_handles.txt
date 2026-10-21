@@ -1,0 +1,31 @@
+# 华语 / 加密圈 真实 Twitter KOL 候选清单
+# 每行一个 handle（不含 @）；# 开头为注释
+
+# ── 头部 / 蓝标 / 大 V ──
+cz_binance
+justinsuntron
+czsxyj
+WuBlockchain
+BlockBeats
+WatcherGuru
+searchin
+btcdayu
+Metamask
+Shibtoken
+
+# ── 中文深度分析 / 链上数据 ──
+hexiecs
+_FORAB
+0xSea
+0x_aladdin
+0xCygnus
+BensonTWN
+Kyla_0x
+DaanCrypto
+jbxrisme
+
+# ── 交易所 / 基础设施 官方中文向 ──
+RuneChristensen
+ArthurMa
+BailyTrading
+0xUni
